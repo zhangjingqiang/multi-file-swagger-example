@@ -3,4 +3,9 @@ get:
     200:
       description: OK
       schema:
-        $ref: ./../definitions/User.yaml
+        type: object
+        properties:
+          Pet:
+            $ref: ./../definitions/models/Pet.yaml
+          User:
+            $ref: ./../definitions/User.yaml

@@ -1,8 +1,8 @@
 {
   "swagger": "2.0",
   "info": {
-    "version": "0.0.0",
-    "title": "Simple API"
+    "version": "0.0.1",
+    "title": "Awesome API"
   },
   "paths": {
     "/foo": {
@@ -11,21 +11,11 @@
           "200": {
             "description": "OK",
             "schema": {
-              "id": {
-                "type": "object",
-                "properties": {
-                  "id": {
-                    "type": "integer",
-                    "format": "int64"
-                  }
-                }
-              },
-              "name": {
-                "type": "object",
-                "properties": {
-                  "name": {
-                    "type": "string"
-                  }
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer",
+                  "format": "int64"
                 }
               }
             }
@@ -41,8 +31,32 @@
             "schema": {
               "type": "object",
               "properties": {
-                "name": {
-                  "type": "string"
+                "Pet": {
+                  "id": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "integer",
+                        "format": "int64"
+                      }
+                    }
+                  },
+                  "name": {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "User": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    }
+                  }
                 }
               }
             }
