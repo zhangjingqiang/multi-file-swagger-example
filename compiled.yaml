@@ -1,0 +1,39 @@
+swagger: '2.0'
+info:
+  version: 0.0.0
+  title: Simple API
+paths:
+  /foo:
+    get:
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: object
+            properties:
+              id:
+                type: integer
+                format: int64
+  /bar:
+    get:
+      responses:
+        '200':
+          description: OK
+          schema: &ref_0
+            type: object
+            properties:
+              name:
+                type: string
+  /nested:
+    get:
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: object
+            properties:
+              name:
+                type: string
+definitions:
+  User: *ref_0
+
