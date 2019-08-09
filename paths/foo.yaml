@@ -3,4 +3,7 @@ get:
     200:
       description: OK
       schema:
-        $ref: ./../definitions/models/post/id.yaml
+        id:
+          $ref: ./../definitions/models/post/id.yaml
+        name:
+          $ref: ./../definitions/models/post/name.yaml
